@@ -1,12 +1,22 @@
-<ion-view view-title="Log In" cache-view="false">
+<ion-view class="wow" view-title="Log In" cache-view="false">
+  <!--
   <ion-header-bar class="bar-stable">
     <h1 class="title">Login</h1>
   </ion-header-bar>
+  -->
   <ion-content>
     <form novalidate class="simple-form">
+
+
       <label>Email: <input type="text" ng-model="email" /></label><br />
-      <input class="button button-block button-positive" type="submit" ng-click="signIn(email)" value="Login" />
-      <input class="button button-block button-positive" type="button" ng-click="signUp()" value="Signup" />
+      <!-- OLD BUTTON
+      <input class="button button-block button-balanced icon-right ion-home" type="submit"  value="Login" />
+      -->
+      <button class="button button-balanced icon-right ion-log-in centerButton" ng-click="signIn(email)">Login</button>
+      <!-- OLD BUTTON
+      <input class="button button-block button-balanced" type="button" ng-click="signUp()" value="Signup" />
+      -->
+      <button class="button button-balanced icon-right ion-clipboard centerButton" ng-click="signUp()">Signup</button>
     </form>
 
   </ion-content>
