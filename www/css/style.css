@@ -11,7 +11,9 @@ form {
   margin-top: 80%;
 }
 */
-
+.loginbutton {
+  margin-top: 50% !important;
+}
 .logo-image {
     margin-top: 0px;
     height: 30px;
