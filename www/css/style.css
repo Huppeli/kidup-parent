@@ -1,6 +1,6 @@
 /* Empty. Add your own CSS if you like */
 
-ion-view {
+ion-view.homescreen {
   background: url("../img/splash_screen.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
