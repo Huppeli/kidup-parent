@@ -14,7 +14,8 @@
   -->
   	<div>Name : {{kid.name}}</div>
     <!-- <div>Id : {{kid._id}}</div> -->
-  	<button class="button button-block button-assertive" ng-click="deleteKid()">Delete Kid</button>
+  	<button class="button button-block button-assertive icon-right ion-trash-a" ng-click="deleteKid()">Delete Kid</button>
+    <button ng-click="logout()" class="button button-block button-positive button-logout icon-right ion-log-out">Logout</button>
   </ion-content>
   <div class="bar bar-footer" >
     <div class="tabs-striped tabs-color-positive">
@@ -33,12 +34,10 @@
         </a>
       </div>
     </div>
-    <!--
 
 
-    <div class="title">
-      <button ng-click="logout()" class="button button-clear">Logout</button>
-    </div>
-    -->
+
+
+
   </div>
 </ion-view>

@@ -237,4 +237,8 @@ angular.module('app.controllers', ['ngCordova'])
     };
 
   }
+  $scope.logout = function (kidId) {
+    delete $rootScope;
+    $state.go('login');
+  }
 })
