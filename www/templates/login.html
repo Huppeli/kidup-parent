@@ -8,15 +8,19 @@
     <form novalidate class="simple-form padding">
       <div class="list">
         <label class="item item-input">
-          <input type="text" placeholder="Email" ng-model="email">
+          <input type="text" placeholder="userName" ng-model="userName">
         </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Password" ng-model="password">
+        </label>
+        
       </div>
       <!--<label>Email: <input type="text" ng-model="email" /></label><br /> -->
 
       <!-- OLD BUTTON
       <input class="button button-block button-balanced icon-right ion-home" type="submit"  value="Login" />
       -->
-      <button class="loginbutton button button-balanced icon-right ion-log-in centerButton" ng-click="signIn(email)">Login</button>
+      <button class="loginbutton button button-balanced icon-right ion-log-in centerButton" ng-click="signIn(userName, password)">Login</button>
       <!-- OLD BUTTON
       <input class="button button-block button-balanced" type="button" ng-click="signUp()" value="Signup" />
       -->

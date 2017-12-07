@@ -2,14 +2,15 @@ angular.module('app.controllers', ['ngCordova'])
 
 .controller('loginCtrl', function ($scope, $state, $rootScope, $http) {
   $rootScope.url = 'https://kidup-server.herokuapp.com/api/';
-  $scope.signIn = function (email) {
+  $scope.signIn = function (userName, password) {
     $http({
     	method: 'POST',
     	url: $rootScope.url + 'parents/login/',
       headers: {
         'Content-Type': 'application/json'
       },
-      data: { email: email }
+      data: { userName: userName,
+              password: password }
     }).then (function successCallback (response) {
         if (!response.data.message) {
           $rootScope.parent = response.data;
@@ -38,7 +39,7 @@ angular.module('app.controllers', ['ngCordova'])
     $state.go('login');
   }
 
-  $scope.signUp = function (email, name) {
+  $scope.signUp = function (userName, password) {
 
   $http({
 	method: 'POST',
@@ -47,8 +48,8 @@ angular.module('app.controllers', ['ngCordova'])
           'Content-Type': 'application/json'
         },
   data: {
-          email: email,
-          name: name
+          userName: userName,
+          password: password
         }
     })
     .then (function successCallback (response) {
